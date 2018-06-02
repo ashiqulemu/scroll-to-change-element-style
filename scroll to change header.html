@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+</script>
+
+
+ 
+
+<style>
+
+.clearHeader{
+		height: 200px; 
+		background-color: rgba(107,107,107,0.66);
+		position: fixed;
+		top:200;
+		width: 100%;
+
+}
+
+
+.darkHeader {height: 100px;}
+
+
+.wrapper {
+height:2000px;
+}
+</style>
+</head>
+<body>
+ <header class="clearHeader">
+ fds
+</header>
+
+<div class="wrapper">
+dsfdsf
+</div>
+<script>
+$(window).scroll(function() {    
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $(".clearHeader").addClass("darkHeader");
+    }else{
+	    $(".clearHeader").removeClass("darkHeader");
+	}
+});
+</script>
+
+</body>
+</html>
+
+
